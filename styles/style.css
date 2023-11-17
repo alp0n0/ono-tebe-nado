@@ -294,6 +294,10 @@ body {
   text-decoration: none;
 }
 
+.footer__social-link {
+  width: 48px;
+}
+
 .footer__menu-link {
   text-decoration: none;
   border-bottom: 1px solid #000;
@@ -302,6 +306,5 @@ body {
 .footer__social-list-item {
   display: flex;
   justify-self: flex-end;
-  width: 240px;
   gap: 48px;
 }
