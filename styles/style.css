@@ -55,7 +55,8 @@ body {
 .address {
   line-height: 24.3px; /* 135% */
   justify-self: end;
-  margin: 6px 2px 0 0;
+  max-width: 240px;
+  margin-top: 5px;
 }
 
 .address a {
@@ -67,7 +68,6 @@ body {
   position: relative;
   background: url(../images/cover.jpg) no-repeat center;
   background-size: cover;
-  z-index: -1;
 }
 
 .overley {
@@ -153,6 +153,7 @@ body {
   font-size: 22px;
   text-transform: uppercase;
   border: 1px solid #fff;
+  cursor: pointer;
 }
 
 .lots {
@@ -171,22 +172,24 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
-  min-width: 430px;
-  min-height: 450px;
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  background-size: cover;
   min-height: 450px;
   padding: 50px 40px;
 }
 
 .card_type_film {
-  position: relative;
-  background: url(../images/card-lot-01.jpg) no-repeat center;
-  background-size: cover;
-}
+  background: url(../images/card-lot-01.jpg) no-repeat center / cover;
+ }
 
 .card__title {
   color: #fff;
@@ -207,15 +210,11 @@ body {
   z-index: 1;
 }
 .card_type_book {
-  position: relative;
-  background: url(../images/card-lot-02.jpg) no-repeat center;
-  background-size: cover;
+  background: url(../images/card-lot-02.jpg) no-repeat center / cover;
 }
 
 .card_type_picture {
-  position: relative;
-  background: url(../images/card-lot-03.jpg) no-repeat center;
-  background-size: cover;
+  background: url(../images/card-lot-03.jpg) no-repeat center / cover;
 }
 
 .lots__look-more-link {
@@ -248,9 +247,6 @@ body {
 }
 .about__title {
   padding-top: 100px;
-}
-
-.about__title h2 {
   font-size: 40px;
   text-transform: uppercase;
   padding-bottom: 100px;
@@ -272,11 +268,12 @@ body {
   padding: 2px 50px 90px;
 }
 
-.address_footer {
+.footer__address {
   line-height: 24.3px;
+  max-width: 240px;
 }
 
-.address_footer a {
+.footer__address a {
   text-decoration: none;
   border-bottom: 1px solid #000;
 }
@@ -290,11 +287,17 @@ body {
   list-style: none;
 }
 
-.footer__menu-link_active {
+.footer__menu-link-active {
   text-decoration: none;
 }
 
-.footer__social-link {
+.footer__links-list {
+  display: flex;
+  gap: 48px;
+}
+
+.footer__links-list-item {
+  list-style: none;
   width: 48px;
 }
 
